@@ -1,4 +1,4 @@
-![alt text goes here]([IMAGE_URL](https://github.com/cghaemm/learn-cicd-starter/actions/workflows/ci.yml/badge.svg))
+![Workflow Status Badge](https://github.com/cghaemm/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
