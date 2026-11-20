@@ -93,13 +93,9 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + port,
 		Handler:           router,
-		ReadHeaderTimeout: 5 * time.Second,
+		ReadHeaderTimeout: time.Second * 5,
 	}
 
-	safeport, err := strconv.Atoi(port)
-	if err != nil {
-		log.Fatalf("Invalid PORT")
-	}
-	log.Printf("Serving on port: %d\n", safeport)
+	log.Printf("Serving on port: %s\n", strconv.Quote(port))
 	log.Fatal(srv.ListenAndServe())
 }
